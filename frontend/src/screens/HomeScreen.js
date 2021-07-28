@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Col, Row } from 'react-bootstrap'
+import ProductCarousel from '../components/ProductCarousel'
 import Product from '../components/Product'
 import Paginate from '../components/Paginate'
 import Message from '../components/Message'
@@ -22,6 +23,7 @@ const HomeScreen = ({ match }) => {
 
 	return (
 		<>
+			{!keyword && <ProductCarousel />}
 			<h1>Latest products</h1>
 			{loading ? (
 				<Loader />
