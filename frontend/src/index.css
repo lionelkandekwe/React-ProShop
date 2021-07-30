@@ -42,3 +42,12 @@ h2 {
 .carousel a {
 	margin: 0 auto;
 }
+
+@media screen and (max-width: 540px) {
+	.carousel-caption h2 {
+		font-size: smaller;
+	}
+	.carousel img {
+		height: 200px;
+	}
+}
